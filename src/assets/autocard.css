@@ -1,0 +1,132 @@
+auto-card-list,
+auto-card-list-head,
+auto-card-list-diff,
+auto-card-list-body,
+auto-card-list-name,
+auto-card-list-info,
+auto-card-list-link,
+auto-card-list-toggle,
+auto-card-list-preview,
+auto-card-list-category,
+auto-card-list-category-type,
+auto-card-list-text-container,
+auto-card-list-image-container,
+auto-card-list-category auto-card {
+  display: block;
+}
+
+auto-card-image {
+  position: relative;
+  display: inline-block;
+}
+auto-card-image a {
+  display: inline-block;
+}
+auto-card-image-quantity {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+auto-card-list-image-container img {
+  width: 200px;
+}
+auto-card-list-text-container {
+  column-count: 3;
+  padding: 5px;
+}
+auto-card-list {
+  text-align: left;
+}
+auto-card-list-diff {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+auto-card-list-diff auto-card-list-body {
+  flex: 0.5;
+}
+auto-card-list-diff auto-card-list-text-container {
+  column-count: 1;
+}
+auto-card-list-head {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+auto-card-list-toggle {
+  padding-left: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+auto-card-list-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+auto-card-list-info {
+  font-style: italic;
+}
+auto-card-list-link {
+}
+auto-card-list-preview {
+  margin: 0px auto;
+  --width: 200px;
+  width: var(--width);
+  height: calc(var(--width)*310/223);
+  background-image: url('https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=0&type=card');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+auto-card-list-preview a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+auto-card-list-preview img {
+  width: 100%;
+  height: 100%;
+}
+auto-card-list-category {
+  padding: 10px;
+}
+auto-card-list-category {
+  /* https://stackoverflow.com/a/7785711/6461842 */
+  -webkit-column-break-inside: avoid; /* Chrome, Safari */
+  page-break-inside: avoid;           /* Theoretically FF 20+ */
+  break-inside: avoid-column;         /* IE 11 */
+  display:table;
+}
+auto-card-list-category-type {
+  font-style: italic;
+  font-weight: bold;
+}
+auto-card-list auto-card a {
+  text-decoration: none;
+  color: inherit;
+}
+auto-card-list auto-card a:hover {
+  text-decoration: underline;
+}
+
+/* mobile */
+@media (max-width: 650px) {
+  auto-card-list-text-container {
+    column-count: 2;
+  }
+}
+@media (max-width: 450px) {
+  auto-card-list-text-container {
+    column-count: 1;
+  }
+  auto-card-list-preview {
+    display: none;
+  }
+}

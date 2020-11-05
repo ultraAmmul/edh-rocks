@@ -1,28 +1,57 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app id="app">
+        <v-app-bar
+            app
+            flat
+        >
+            <v-toolbar-title>edh.rocks</v-toolbar-title>
+
+            <v-spacer></v-spacer>
+
+            <v-btn
+                v-for="link in links"
+                :key="link"
+                :to="link.url"
+                text
+            >
+                {{ link.label }}
+            </v-btn>
+        </v-app-bar>
+
+        <v-main>
+            <v-container>
+                <v-row>
+
+                    <v-col>
+                        <router-view></router-view>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    data: () => ({
+        links: [
+            {
+                label: "Banlist",
+                url: "/"
+            },
+            // {
+            //     label: "About",
+            //     url: "/about"
+            // },
+            // {
+            //     label: "Contact",
+            //     url: "/contact"
+            // },
+            {
+                label: "Imprint & Privacy",
+                url: "/imprint_privacy"
+            }
+        ],
+    }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
