@@ -1,46 +1,349 @@
-Cyclonic Rift
-Sol Ring
-Mana Crypt
-Mana Vault
-Greater Good
-Necropotence
-Expropriate
-Rhystic Study
-Mystic Remora
-Smothering Tithe
-Drannith Magistrate
-Ashnods Altar
-demonic tutor
-protean hulk
-ashiok
-mindslaver
-1 cmc tutor cycle
-alle moxe
-mana drain
-gayas cradle
-teferis protection
-Temple Bell Combo
-kikki jikki combo
-mind over matter
-senseis
-palinchron
-fireminds foresight
-urza
-michel
-show and tell
-omniscience
-buried alive
-nyxbloom
-damage tripler
-kinneth
-deadeye
-peregrine drake
-priest of titania
-teferis ageless insight
-yawgmoths will
-underworld breach
-fires of invention
-tooth &  nail
-Teferi*
-omnath 4 color
-twd cards
+[
+    {
+        "id": 1,
+        "name": "Cyclonic Rift",
+        "description": ""
+
+    },
+    {
+        "id": 2,
+        "name": "Sol Ring",
+        "description": ""
+
+    },
+    {
+        "id": 3,
+        "name": "Mana Crypt",
+        "description": ""
+
+    },
+    {
+        "id": 4,
+        "name": "Mana Vault",
+        "description": ""
+
+    },
+    {
+        "id": 5,
+        "name": "Greater Good",
+        "description": ""
+
+    },
+    {
+        "id": 6,
+        "name": "Necropotence",
+        "description": ""
+
+    },
+    {
+        "id": 7,
+        "name": "Expropriate",
+        "description": ""
+
+    },
+    {
+        "id": 8,
+        "name": "Rhystic Study",
+        "description": ""
+
+    },
+    {
+        "id": 9,
+        "name": "Mystic Remora",
+        "description": ""
+
+    },
+    {
+        "id": 10,
+        "name": "Smothering Tithe",
+        "description": ""
+
+    },
+    {
+        "id": 11,
+        "name": "Drannith Magistrate",
+        "description": ""
+
+    },
+    {
+        "id": 12,
+        "name": "Ashnod's Altar",
+        "description": ""
+
+    },
+    {
+        "id": 13,
+        "name": "Demonic Tutor",
+        "description": ""
+
+    },
+    {
+        "id": 14,
+        "name": "Protean Hulk",
+        "description": ""
+
+    },
+    {
+        "id": 15,
+        "name": "Ashiok, Dream Render",
+        "description": ""
+
+    },
+    {
+        "id": 16,
+        "name": "Mindslaver",
+        "description": ""
+
+    },
+    {
+        "id": 17,
+        "name": "Mystical Tutor",
+        "description": ""
+
+    },
+    {
+        "id": 18,
+        "name": "Vampirical Tutor",
+        "description": ""
+
+    },
+    {
+        "id": 19,
+        "name": "Worldy Tutor",
+        "description": ""
+
+    },
+    {
+        "id": 20,
+        "name": "Enlightened Tutor",
+        "description": ""
+
+    },
+    {
+        "id": 21,
+        "name": "Chrome Mox",
+        "description": ""
+
+    },
+    {
+        "id": 22,
+        "name": "Mox Amber",
+        "description": ""
+
+    },
+    {
+        "id": 23,
+        "name": "Mox Diamond",
+        "description": ""
+
+    },
+    {
+        "id": 24,
+        "name": "Mox Opal",
+        "description": ""
+
+    },
+    {
+        "id": 25,
+        "name": "Mana Drain",
+        "description": ""
+
+    },
+    {
+        "id": 26,
+        "name": "Gaea's Cradle",
+        "description": ""
+    },
+    {
+        "id": 27,
+        "name": "Teferi's Protection",
+        "description": ""
+
+    },
+    {
+        "id": 28,
+        "name": "Temple Bell",
+        "description": ""
+
+    },
+    {
+        "id": 29,
+        "name": "Kiki-Jiki, Mirror Breaker",
+        "description": ""
+
+    },
+    {
+        "id": 30,
+        "name": "Zealous Conscripts",
+        "description": ""
+
+    },
+    {
+        "id": 31,
+        "name": "Mind Over Matter",
+        "description": ""
+
+    },
+    {
+        "id": 32,
+        "name": "Sensei's Divining Top",
+        "description": ""
+
+    },
+    {
+        "id": 33,
+        "name": "Palinchron",
+        "description": ""
+
+    },
+    {
+        "id": 34,
+        "name": "Firemind's Foresight",
+        "description": ""
+
+    },
+    {
+        "id": 35,
+        "name": "Urza, Lord High Artificier",
+        "description": ""
+
+    },
+    {
+        "id": 36,
+        "name": "Mikaeus, the Unhallowed",
+        "description": ""
+
+    },
+    {
+        "id": 37,
+        "name": "Show and Tell",
+        "description": ""
+
+    },
+    {
+        "id": 38,
+        "name": "Omiscience",
+        "description": ""
+
+    },
+    {
+        "id": 39,
+        "name": "Buried Alive",
+        "description": ""
+
+    },
+    {
+        "id": 40,
+        "name": "Nyxbloom Ancient",
+        "description": ""
+
+    },
+    {
+        "id": 41,
+        "name": "Fiery Emancipation",
+        "description": ""
+
+    },
+    {
+        "id": 42,
+        "name": "Kinnan, Bonder Prodigy",
+        "description": ""
+
+    },
+    {
+        "id": 43,
+        "name": "Deadeye Navigator",
+        "description": ""
+
+    },
+    {
+        "id": 44,
+        "name": "Deadeye Navigator",
+        "description": ""
+
+    },
+    {
+        "id": 45,
+        "name": "Priest of Titania",
+        "description": ""
+
+    },
+    {
+        "id": 46,
+        "name": "Teferi's Ageless Insight",
+        "description": ""
+
+    },
+    {
+        "id": 47,
+        "name": "Yawgmoth's Will",
+        "description": ""
+
+    },
+    {
+        "id": 48,
+        "name": "Underworld Breach",
+        "description": ""
+
+    },
+    {
+        "id": 49,
+        "name": "Fires of Invention",
+        "description": ""
+
+    },
+    {
+        "id": 50,
+        "name": "Tooth and Nail",
+        "description": ""
+
+    },
+    {
+        "id": 51,
+        "name": "Omnath, Locus of Creation",
+        "description": ""
+
+    },
+    {
+        "id": 52,
+        "name": "Teferi, Mage of Zhalfir",
+        "description": ""
+
+    },
+    {
+        "id": 53,
+        "name": "Teferi, Hero of Dominaria",
+        "description": ""
+
+    },
+    {
+        "id": 54,
+        "name": "Teferi, Master of Time",
+        "description": ""
+
+    },
+    {
+        "id": 55,
+        "name": "Teferi, Temporal Archmage",
+        "description": ""
+
+    },
+    {
+        "id": 56,
+        "name": "Teferi, Timebender",
+        "description": ""
+
+    },
+    {
+        "id": 57,
+        "name": "Teferi, Timeless Voyager",
+        "description": ""
+
+    },
+    {
+        "id": 58,
+        "name": "Teferi, Time Raveler",
+        "description": ""
+
+    }
+]
