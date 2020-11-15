@@ -10,7 +10,7 @@
 
             <v-btn
                 v-for="link in links"
-                :key="link"
+                :key="link.label"
                 :to="link.url"
                 text
             >

@@ -1,5 +1,12 @@
+var path = require('path');
+
 module.exports = {
   "transpileDependencies": [
     "vuetify"
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 9000
+  }
 }
