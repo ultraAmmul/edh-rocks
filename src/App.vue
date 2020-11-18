@@ -13,6 +13,7 @@
                 :key="link.label"
                 :to="link.url"
                 text
+                class="mr-2"
             >
                 {{ link.label }}
             </v-btn>
@@ -39,10 +40,10 @@ export default {
                 label: "Banlist",
                 url: "/"
             },
-            // {
-            //     label: "About",
-            //     url: "/about"
-            // },
+            {
+                label: "About",
+                url: "/about"
+            },
             // {
             //     label: "Contact",
             //     url: "/contact"

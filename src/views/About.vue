@@ -1,12 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
   </div>
 </template>
 
 <script>
+import queue from "../plugins/queue";
+
 export default {
-    name: "About"
+    name: "About",
+    mounted: function(){
+      queue.init();
+    }
 }
 </script>
 

@@ -1,12 +1,18 @@
 <template>
     <v-container>
-        <v-row
-            v-for="card in cards"
-            v-bind:key="card.id"
-        >
-            <Card
-                :card="card"
-            ></Card>
+        <v-row>
+            <v-col
+                v-for="card in cards"
+                v-bind:key="card.id"
+                cols="2"
+            >
+                <v-card>
+                    <Card
+                        :card="card"
+                    ></Card>
+
+                </v-card>
+            </v-col>
         </v-row>
     </v-container>
 </template>
@@ -26,8 +32,8 @@
             }
         },
         mounted: function () {
-            CardService.loadCards();
-            this.cards = CardService.getCards();
+            CardService.loadJSON();
+            this.cards = CardService.getJSON();
         }
     }
 </script>

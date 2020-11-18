@@ -1,32 +1,29 @@
-import cardJson from "../assets/cards.json";
-import axios from "axios";
+import cardJson from "../assets/cards.json"
+import axios from "axios"
 
 export default {
     cards: [],
+    json: [],
     fetching: false,
-    loadCards () {
-        this.cards = cardJson;
+    loadJSON () {
+        this.json = cardJson
+    },
+    getJSON(){
+        return this.json
     },
     getCards () {
-        return this.cards;
+        return this.cards
     },
-    loadCardData (name) {
-        return new Promise((resolve) => {
-            if(this.fetching){
-                resolve(null);
-            }
+    addCard (card) {
+        this.cards.push(card)
+    },
+    async loadCardData (card) {
+        let name = card.name
+        let cardUri = encodeURIComponent(name)
+        let url = "https://api.scryfall.com/cards/named?fuzzy=" + cardUri
 
-            this.fetching = true;
-    
-            let cardUri = encodeURIComponent(name);
-            let url = "https://api.scryfall.com/cards/named?fuzzy=" + cardUri;
-    
-            axios.get(url).then((response) => {
-                resolve(response.data);
-            }).finally(()=>{
-                this.fetching = false;
-            }) 
-
-        })
+        let fetched = await axios.get(url)
+        console.info("fetched card",fetched)
+        return fetched
     }
 }

@@ -1,11 +1,48 @@
 <template>
-    <v-container>
+    <v-container>            
+        <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+            <span
+                @mouseenter="hover = true"
+                @mouseleave ="hover = false"
+                v-bind="attrs"
+                v-on="on"            
+            >
+                {{ card.name }}
+            </span>
+                </template>
+                <div class="card">
+                    <v-progress-circular
+                        indeterminate
+                        v-if="loading"
+                    ></v-progress-circular>
+                    <v-img 
+                        v-if="cardData !== null"
+                        :src="cardData.image_uris.normal"
+                        contain
+                    ></v-img>
+                </div>
+            </v-tooltip>
+    </v-container>
+    <!-- <v-container>
         <v-card
             :id="card.id"
-            @mouseenter="hover = true"
-            @mouseleave ="hover = false"
         >
-            <v-card-title>{{ card.name }}</v-card-title>
+            <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                </template>
+                    <div class="card">
+                        <v-progress-circular
+                            indeterminate
+                            v-if="loading"
+                        ></v-progress-circular>
+                        <v-img 
+                            v-if="cardData !== null"
+                            :src="cardData.image_uris.normal"
+                            contain
+                        ></v-img>
+                    </div>
+            </v-tooltip>
             <v-card-text>
                 <v-row>
                     <v-col>
@@ -37,7 +74,7 @@
                 </v-row>
             </v-card-text>
         </v-card>
-    </v-container>
+    </v-container> -->
 </template>
 
 <script>
@@ -56,20 +93,22 @@ import CardService from '../services/CardService'
         watch: {
             hover: function(){
                 if(!this.loading){
-                    this.loadData();
+                    this.loadData()
                 }
             }
         },
         methods: {
-            loadData () {
+            async loadData () {
                 if(this.cardData !== null){
                     return;
                 }
-                this.loading = true;
-                CardService.loadCardData(this.card.name).then((data) => {
-                    this.cardData = data;
-                    this.loading = false;
-                });
+                this.loading = true
+                let fetchedCard = await CardService.loadCardData(this.card)
+                this.cardData = fetchedCard.data
+                console.log(this.cardData)
+                this.loading = false
+
+
             }
         },
         mounted: function () {
